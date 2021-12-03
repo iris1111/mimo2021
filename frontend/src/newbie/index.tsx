@@ -6,6 +6,8 @@ import "./style.css";
 import Header from "../components/Header";
 
 import TaskLine from "../components/TaskLine/";
+import tasks from "../components/TaskLine/tasks.json";
+
 // import Swiper core and required modules
 import SwiperCore, { Mousewheel, Navigation, Pagination } from "swiper";
 
@@ -36,13 +38,15 @@ export default function Newbie() {
               centeredSlides={true}
               spaceBetween={30}
             >
-              <SwiperSlide>
-                <TaskLine day={1}></TaskLine>
-              </SwiperSlide>
-              <SwiperSlide>
-                <TaskLine day={2}></TaskLine>
-              </SwiperSlide>
-              <SwiperSlide></SwiperSlide>
+              {
+                tasks.map((day) => {
+                  return (
+                    <SwiperSlide>
+                      <TaskLine day={day.day} tasks={day.tasks}></TaskLine>
+                    </SwiperSlide>
+                  )
+                })
+              }
             </Swiper>            
           </div>          
         </SwiperSlide>

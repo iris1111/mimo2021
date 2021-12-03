@@ -8,6 +8,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { TimelineOppositeContent } from "@mui/lab";
 import Task from "../Task";
 import "./style.css";
+
 import {
   AttachFileOutlined,
   DescriptionOutlined,
@@ -20,35 +21,6 @@ export default function TaskLine(props?: any) {
     "success" = "success",
     "hold" = "secondary",
   }
-  const tasks = [
-    {
-      id: 1,
-      title: "Read text",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti autem, blanditiis commodi incidunt sapiente nesciunt earum delectus magni veritatis amet porro necessitatibus tempora velit excepturi ipsam, exercitationem ducimus quis!",
-      type: "read",
-      status: StatusColor.success,
-      color: "gold",
-    },
-    {
-      id: 2,
-      title: "Подписание трудого договора",
-      type: "upload",
-      status: StatusColor.success,
-      color: "green",
-    },
-    {
-      id: 3,
-      title: "Meeting",
-      type: "meeting",
-      status: StatusColor.hold,
-    },
-    {
-      id: 4,
-      title: "Upload document",
-      type: "upload",
-      status: StatusColor.success,
-    },
-  ];
 
   function renderIcon(task: any) {
     switch (task.type) {
@@ -77,7 +49,7 @@ export default function TaskLine(props?: any) {
       <div className="task-line">
         <div className="task-day">День {props.day}</div>
         <Timeline position="alternate">
-          {tasks.map((task) => {
+        {props.tasks.map((task: any) => {
             return (
               <TimelineItem>
                 <TimelineOppositeContent
@@ -105,7 +77,7 @@ export default function TaskLine(props?: any) {
                   </div>
                 </TimelineContent>
               </TimelineItem>
-            );
+            )
           })}
         </Timeline>
       </div>

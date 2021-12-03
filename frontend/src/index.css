@@ -27,6 +27,9 @@ html {
   left: 0;
   right: 0;
 }
+.header > div {
+  float: left;
+}
 
 .section-swiper .swiper-slide > div {
   margin-top: 70px;
@@ -37,4 +40,12 @@ html {
   background: url(./logo.png) center center no-repeat;
   width: 250px;
   height: 100%;
+}
+
+.progress {
+  width: 300px;
+  height: 16px;
+  margin: 27px;
+  background: #ffffff;
+  border-radius: 20px;
 }
