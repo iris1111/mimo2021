@@ -26,9 +26,11 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 12;
 }
-.header > div {
+.header > * {
   float: left;
+  color: #ffffff;
 }
 
 .section-swiper .swiper-slide > div {
@@ -43,9 +45,47 @@ html {
 }
 
 .progress {
-  width: 300px;
+  width: 400px;
   height: 16px;
   margin: 27px;
   background: #ffffff;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress > * {
+  background: #91C983;
+  height: 100%;
+}
+
+
+.search {
+  background: url(./search.png) center center no-repeat;
+  height: 30px;
+  margin: 20px;
+  width: 40px;
+  cursor: pointer;
+  float: right;
+}
+
+.menu {
+  list-style-type: none;
+  height: 30px;
+  margin: 20px;
+}
+.menu li {
+  float: left;
+  color: #ffffff;
+  line-height: 30px;
+  padding: 0 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.bonusTotal {
+  height: 30px;
+  margin: 16px;
+  background: #E25711;
+  padding: 5px 15px;
+  border-radius: 8px;
+  line-height: 27px;
 }
