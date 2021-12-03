@@ -20,7 +20,7 @@ export default function Header(props: any) {
   };
   return (
     <div className="header">
-      <div className="logo"></div>
+      <a href="/" className="logo"></a>
       <Progress />
 
       <ul className="menu">
@@ -30,7 +30,7 @@ export default function Header(props: any) {
         </Badge>
         <li>Команда</li>
       </ul>
-      {props.bonus && <div className="bonusTotal">2 220 б.</div>}
+      {props.bonus && <div className="bonusTotal">2 220 Б</div>}
 
       <div className="search"></div>
 

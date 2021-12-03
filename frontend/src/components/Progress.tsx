@@ -1,27 +1,21 @@
 import React, { useState } from "react";
 import tasks from "./TaskLine/tasks.json";
+const renderDays = () => {
+  let num = 0;
+  let template;
 
-export default function Progress (props: any) {
-    const progress = () => {
-        let done = 0;
-        let all = 0;
-        tasks.map((day) => {
-            day.tasks.map((task) => {
-                if(task.status == 'success') {
-                    done++;
-                }
-                all++;
-            })            
-        })
-        done = done / all * 100;
-        return done;
+  template = tasks.map((day) => {
+    num++;
+    if (day.tasks && num != tasks.length) {
+      return <span className="doneDay">День {num}</span>;
+    } else {
+      return <span>День {num}</span>;
     }
-    
-    
-    return (
-        <div className="progress">
-            <div style={{width: progress() + '%'}}></div>
-        </div>
-    );
+  });
+
+  return template;
+};
+
+export default function Progress() {
+  return <div className="progress">{renderDays()}</div>;
 }
-  

@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 body {
+  font-style: normal;
+  font-weight: normal;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: PT Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +23,7 @@ html {
 }
 
 .header {
-  background: linear-gradient(115.13deg, #FA4616 0%, #FF7428 97.28%);
+  background: linear-gradient(115.13deg, #fa4616 0%, #ff7428 97.28%);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
   height: 70px;
   position: absolute;
@@ -53,11 +57,22 @@ html {
   overflow: hidden;
 }
 
-.progress > * {
-  background: #91C983;
-  height: 100%;
+.progress > span {
+  width: calc(20% - 1px);
+  display: inline-block;
+  float: left;
+  line-height: 16px;
+  font-size: 10px;
+  text-align: center;
+  border-right: 1px solid #00000021;
+  color: #c3c3c3;
 }
 
+.progress > .doneDay {
+  background: #91c983;
+  height: 100%;
+  color: #468436;
+}
 
 .search {
   background: url(./search.png) center center no-repeat;
@@ -84,7 +99,7 @@ html {
 .bonusTotal {
   height: 30px;
   margin: 16px;
-  background: #E25711;
+  background: #e25711;
   padding: 5px 15px;
   border-radius: 8px;
   line-height: 27px;
