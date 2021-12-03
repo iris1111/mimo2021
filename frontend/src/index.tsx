@@ -5,12 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Newbie from "./newbie/index";
+import Mentor from "./mentor/";
 
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
         <Route path="/newbie" element={<Newbie />} />
+        <Route path="/mentor" element={<Mentor />} />
       </Routes>
       <App />
     </React.StrictMode>
