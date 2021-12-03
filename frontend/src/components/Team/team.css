@@ -1,37 +1,47 @@
 .teamPage {
-    background: #ffffff;
-    padding-top: 25px;
-    text-align: center;
-    min-height: 300px;
+  background: #ffffff;
+  padding-top: 25px;
+  text-align: center;
+  min-height: 300px;
 }
 
 .teamList {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 490px;
-    margin: 0 auto;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 490px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 .teamUser {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    width: 130px;
-    margin-bottom: 30px;
-    margin-top: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 130px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 145%;
 }
 .teamUserName {
-
+  color: #30353b;
 }
 .teamUserPhoto {
-    border-radius: 40px;
-    height: 58px;
-    width: 58px;
-    margin: -30px auto 15px;
+  border-radius: 40px;
+  height: 58px;
+  width: 58px;
+  margin: -30px auto 15px;
 }
 .teamUserMess {
-
+  background: url(../../img/mess.png);
+  height: 24px;
+  width: 24px;
+  margin: 5px auto;
+  display: block;
 }
 .teamUserMark {
-
+  color: rgba(48, 53, 59, 0.5);
 }
