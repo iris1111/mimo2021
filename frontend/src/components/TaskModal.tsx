@@ -2,12 +2,21 @@ import { Link, Modal } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import "./TaskModal.css";
+import img from "./modal1.png";
 
 export default function TaskModal(props?: any) {
   return (
     <Modal open={props.open} onClose={props.onClose}>
       <Box className="modal-container">
-        <h1>{props.task.title}</h1>
+        <img src={img} />
+      </Box>
+    </Modal>
+  );
+}
+
+
+/*
+<h1>{props.task.title}</h1>
         <div className="modal-description">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
@@ -24,7 +33,4 @@ export default function TaskModal(props?: any) {
             Document 2
           </Link>
         </div>
-      </Box>
-    </Modal>
-  );
-}
+*/
