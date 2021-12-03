@@ -93,3 +93,7 @@
   height: 24px;
   width: 24px;
 }
+
+.blue {
+  background-color: rgba(20, 26, 94, 1);
+}
