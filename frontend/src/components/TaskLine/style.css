@@ -17,6 +17,7 @@
   position: absolute;
   padding: 5px;
   z-index: 9999;
+  text-align: center;
 }
 .task-line-task-wrapper {
   position: relative;
@@ -30,7 +31,14 @@
   height: 550px;
   width: 650px;
   margin: 0 auto;
+  margin-top: 70px;
 }
 .task-day {
   text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  font-weight: 700;
+}
+.gold {
+  background-color: rgba(250, 224, 134, 1);
 }
