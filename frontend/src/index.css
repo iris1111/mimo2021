@@ -17,3 +17,24 @@ html {
   margin: 0;
   padding: 0;
 }
+
+.header {
+  background: linear-gradient(115.13deg, #FA4616 0%, #FF7428 97.28%);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.section-swiper .swiper-slide > div {
+  margin-top: 70px;
+  max-height: calc(100% - 45px);
+}
+
+.logo {
+  background: url(./logo.png) center center no-repeat;
+  width: 250px;
+  height: 100%;
+}
