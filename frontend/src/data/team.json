@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Ляля Василькова",
+        "telega": "upload",
+        "mark": "backend",
+        "game": "дважды сидел в тюрьме"
+    }, 
+    {
+        "id": 2,
+        "name": "Валя Лопухова",
+        "telega": "fgfgjt",
+        "mark": "QA",
+        "game": "играет на арфе"
+    },
+    {
+        "id": 3,
+        "name": "Ляля Василькова",
+        "telega": "upload",
+        "mark": "backend",
+        "game": "дважды сидел в тюрьме"
+    }, 
+    {
+        "id": 4,
+        "name": "Валя Лопухова",
+        "telega": "fgfgjt",
+        "mark": "QA",
+        "game": "играет на арфе"
+    },
+    {
+        "id": 5,
+        "name": "Ляля Василькова",
+        "telega": "upload",
+        "mark": "backend",
+        "game": "дважды сидел в тюрьме"
+    }, 
+    {
+        "id": 6,
+        "name": "Валя Лопухова",
+        "telega": "fgfgjt",
+        "mark": "QA",
+        "game": "играет на арфе"
+    },
+    {
+        "id": 7,
+        "name": "Ляля Василькова",
+        "telega": "upload",
+        "mark": "backend",
+        "game": "дважды сидел в тюрьме"
+    }, 
+    {
+        "id": 8,
+        "name": "Валя Лопухова",
+        "telega": "fgfgjt",
+        "mark": "QA",
+        "game": "играет на арфе"
+    },
+    {
+        "id": 9,
+        "name": "Ляля Василькова",
+        "telega": "upload",
+        "mark": "backend",
+        "game": "дважды сидел в тюрьме"
+    }, 
+    {
+        "id": 10,
+        "name": "Валя Лопухова",
+        "telega": "fgfgjt",
+        "mark": "QA",
+        "game": "играет на арфе"
+    }
+]
