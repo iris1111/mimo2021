@@ -1,10 +1,7 @@
 import * as React from "react";
 import teamData from "../../data/team.json";
 import "./team.css";
-
-teamData.map(function (user) {
-    import img from "../../img/team1.png";
-})
+import imgUrl from "../../img/team1.png";
 
 export default function TeamPage() {
     console.log(teamData);
@@ -17,9 +14,10 @@ export default function TeamPage() {
                 <div className="teamList">
                     {
                         teamData.map(function (user) {
+                            
                             return (
                             <div className="teamUser" key={user.id}>
-                                <div className="teamUserPhoto" style={{background: "url(../../img/1.png)"}}></div>
+                                <div className="teamUserPhoto"><img src={imgUrl} /></div>
                                 <div className="teamUserName">{user.name}</div>
                                 <div className="teamUserMark">{user.mark}</div>
                                 <div className="teamUserMess"></div>
