@@ -6,6 +6,7 @@ import "./style.css";
 import Header from "../components/Header";
 
 import TaskLine from "../components/TaskLine/";
+import TeamPage from "../components/Team/";
 import tasks from "../components/TaskLine/tasks.json";
 import events from "./events.json";
 
@@ -50,6 +51,7 @@ export default function Newbie() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
+<<<<<<< HEAD
           <div>
             <h1>События</h1>
             <Swiper
@@ -78,6 +80,10 @@ export default function Newbie() {
             <h1>Команда</h1>
           </div>
         </SwiperSlide>
+=======
+          <TeamPage/>
+        </SwiperSlide>          
+>>>>>>> 7a27450cde38f656eb7ca6671e2c830deebbc91d
       </Swiper>
     </div>
   );
