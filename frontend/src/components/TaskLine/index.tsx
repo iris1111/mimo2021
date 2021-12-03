@@ -24,9 +24,10 @@ export default function TaskLine(props?: any) {
     },
     {
       id: 2,
-      title: "Upload document",
+      title: "Подписание трудого договора",
       type: "upload",
       status: StatusColor.hold,
+      color: "gold",
     },
     {
       id: 3,
@@ -43,8 +44,8 @@ export default function TaskLine(props?: any) {
   ];
   return (
     <div className="">
-      <h1 className="task-day">День {props.day}</h1>
       <div className="task-line">
+        <div className="task-day">День {props.day}</div>
         <Timeline position="alternate">
           {tasks.map((task) => {
             return (
@@ -64,7 +65,11 @@ export default function TaskLine(props?: any) {
                   <div className={"task-line-task-wrapper"}>
                     <Task
                       key={task.id}
-                      className={task.id % 2 === 0 ? "task-left" : ""}
+                      className={
+                        task.color +
+                        " " +
+                        (task.id % 2 === 0 ? "task-left" : "")
+                      }
                       task={task}
                     ></Task>
                   </div>

@@ -27,7 +27,17 @@ export default function Newbie() {
         className="section-swiper"
       >
         <SwiperSlide>
-          <Swiper navigation={true} className="task-swiper">
+          <Swiper
+            navigation={true}
+            slideToClickedSlide={false}
+            className="task-swiper"
+            slidesPerView={"auto"}
+            centeredSlides={true}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+          >
             <SwiperSlide>
               <TaskLine day={1}></TaskLine>
             </SwiperSlide>
@@ -38,8 +48,10 @@ export default function Newbie() {
           </Swiper>
         </SwiperSlide>
         <SwiperSlide>
-          {/* <Swiper
-            slidesPerView={3}
+          <h1>Events</h1>
+          <Swiper
+            slidesPerView={"auto"}
+            centeredSlides={true}
             spaceBetween={30}
             pagination={{
               clickable: true,
@@ -55,8 +67,7 @@ export default function Newbie() {
             <SwiperSlide>Slide 7</SwiperSlide>
             <SwiperSlide>Slide 8</SwiperSlide>
             <SwiperSlide>Slide 9</SwiperSlide>
-          </Swiper> */}
-          <h1>Events</h1>
+          </Swiper>
         </SwiperSlide>
       </Swiper>
     </div>

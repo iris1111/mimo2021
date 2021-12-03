@@ -6,6 +6,30 @@
 .task-swiper {
   height: 100vh;
 }
+.task-swiper .swiper-slide {
+  width: 45%;
+}
+.task-swiper .swiper-slide-prev,
+.swiper-slide-next {
+  transform: scale(0.8);
+}
+.task-swiper .swiper-slide-prev::after,
+.swiper-slide-next::after {
+  content: "";
+  position: absolute;
+  height: 550px;
+  width: 650px;
+  /* width: 100%; */
+  top: 70px;
+  left: 0;
+  /* height: 100%; */
+  background-color: #e8e8e8;
+  z-index: 9999;
+  opacity: 0.7;
+}
+.task-swiper .swiper-slide-active {
+  z-index: 99999;
+}
 .swiper-button-prev {
   left: 25px;
 }

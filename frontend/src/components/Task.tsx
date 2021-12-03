@@ -9,10 +9,9 @@ export default function Task(props: any) {
   function handleOpen() {}
   return (
     <div className={"task" + " " + props.className}>
-      <p>{props.task.title}</p>
-      <Button variant="outlined" onClick={() => setModalOpen(true)}>
-        Open
-      </Button>
+      <div onClick={() => setModalOpen(true)}>
+        <p>{props.task.title}</p>
+      </div>
       <TaskModal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
