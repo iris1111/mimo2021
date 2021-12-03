@@ -1,0 +1,6 @@
+.task-line-container {
+  display: flex;
+}
+.task-line_task {
+  margin: 20px;
+}
