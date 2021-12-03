@@ -14,6 +14,13 @@
                 "title": "Upload document",
                 "type": "upload",
                 "status": "hold"
+            },
+            {
+                "id": 100,
+                "title": "Правила героев ПСБ",
+                "type": "hero",
+                "color": "hero",
+                "status": "hero"
             }
         ]
     },
@@ -46,6 +53,13 @@
                 "title": "Upload document",
                 "type": "upload",
                 "status": "hold"
+            },
+            {
+                "id": 100,
+                "title": "Правила героев ПСБ",
+                "type": "hero",
+                "color": "hero",
+                "status": "hero"
             }
         ]
     },
@@ -59,6 +73,13 @@
                 "type": "read",
                 "status": "success",
                 "color": "gold"
+            },
+            {
+                "id": 100,
+                "title": "Правила героев ПСБ",
+                "type": "hero",
+                "color": "hero",
+                "status": "hero"
             }
         ]
     },
@@ -70,6 +91,13 @@
                 "title": "Upload document",
                 "type": "upload",
                 "status": "hold"
+            },
+            {
+                "id": 100,
+                "title": "Правила героев ПСБ",
+                "type": "hero",
+                "color": "hero",
+                "status": "hero"
             }
         ]
     },
@@ -102,6 +130,13 @@
                 "title": "Upload document",
                 "type": "upload",
                 "status": "hold"
+            },
+            {
+                "id": 100,
+                "title": "Правила героев ПСБ",
+                "type": "hero",
+                "color": "hero",
+                "status": "hero"
             }
         ]
     }

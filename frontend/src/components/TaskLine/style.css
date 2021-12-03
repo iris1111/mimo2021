@@ -13,11 +13,12 @@
 .task {
   background: #f5f6f7;
   border-radius: 4px;
-  width: 245px;
+  width: 205px;
   position: absolute;
-  padding: 5px;
+  padding: 5px 15px 5px 40px;
   z-index: 9999;
-  text-align: center;
+  text-align: left;
+  cursor: pointer;
 }
 .task-line-task-wrapper {
   position: relative;
@@ -53,4 +54,42 @@
 
 .text-green {
   color: rgba(154, 215, 106, 1);
+}
+
+.hero {
+  background: #141A5E;
+  color: #ffffff;
+}
+.task p {
+  position: relative;
+}
+
+.task p:before  {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff8a;
+  position: absolute;
+  top: calc(50% - 5px);
+  left: -25px;
+}
+
+.hero:after {
+  content: '';
+  background-image: url(../../img/hero.png);
+  height: 111px;
+  width: 42px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+
+.timeHero {
+  background-image: url(../../img/hero-icon.png);
+  background-size: contain;
+  height: 24px;
+  width: 24px;
 }

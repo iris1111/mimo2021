@@ -60,7 +60,7 @@ export default function TaskLine(props?: any) {
                 ></TimelineOppositeContent>
                 <TimelineSeparator className="task-line_line">
                   <TimelineConnector />
-                  {renderIcon(task)}
+                  {task.type == 'hero' ? <span className="timeHero"></span> : renderIcon(task)}
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>

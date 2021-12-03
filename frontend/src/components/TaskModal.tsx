@@ -3,12 +3,17 @@ import { Box } from "@mui/system";
 import React from "react";
 import "./TaskModal.css";
 import img from "./modal1.png";
+import imgHero from "../img/modalHero2.png";
 
 export default function TaskModal(props?: any) {
+  console.log(props.task.type);
   return (
     <Modal open={props.open} onClose={props.onClose}>
       <Box className="modal-container">
-        <img src={img} />
+        {
+          props.task.type == 'hero' ? <img src={imgHero} /> : <img src={img} />
+        }
+        
       </Box>
     </Modal>
   );
