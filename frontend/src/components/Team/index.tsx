@@ -19,7 +19,7 @@ export default function TeamPage() {
                 </div>
                 <div className="teamUserName">{user.name}</div>
                 <div className="teamUserMark">{user.mark}</div>
-                <div className="teamUserMess"></div>
+                <a className="teamUserMess" href="{user.mess}"></a>
               </div>
             );
           })}
