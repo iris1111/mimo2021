@@ -4,33 +4,30 @@ import "./team.css";
 import imgUrl from "../../img/team1.png";
 
 export default function TeamPage() {
-    console.log(teamData);
-    
-    
-    return (
-        <div>
-            <div className="teamPage">
-                <h1>Команда</h1>
-                <div className="teamList">
-                    {
-                        teamData.map(function (user) {
-                            
-                            return (
-                            <div className="teamUser" key={user.id}>
-                                <div className="teamUserPhoto"><img src={imgUrl} /></div>
-                                <div className="teamUserName">{user.name}</div>
-                                <div className="teamUserMark">{user.mark}</div>
-                                <div className="teamUserMess"></div>
-                            </div>
-                            )
-                        })
-                    }
-                </div>
-            </div>
-        </div>
-    );
-}
+  console.log(teamData);
 
+  return (
+    <div>
+      <div className="teamPage">
+        <h1>Команда</h1>
+        <div className="teamList">
+          {teamData.map(function (user) {
+            return (
+              <div className="teamUser" key={user.id}>
+                <div className="teamUserPhoto">
+                  <img src={imgUrl} />
+                </div>
+                <div className="teamUserName">{user.name}</div>
+                <div className="teamUserMark">{user.mark}</div>
+                <div className="teamUserMess"></div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 /*
 
