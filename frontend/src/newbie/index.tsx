@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import "./style.css";
+import Header from "../components/Header";
 
 import TaskLine from "../components/TaskLine/";
 // import Swiper core and required modules
@@ -14,7 +15,7 @@ SwiperCore.use([Navigation, Mousewheel, Pagination]);
 export default function Newbie() {
   return (
     <div>
-      <div className="header">Header</div>
+      <Header/>
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
