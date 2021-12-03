@@ -1,0 +1,53 @@
+[
+  {
+    "day": "22 Декабря 2021",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Доступы к площадкам (Иван Иванов)",
+        "type": "upload",
+        "status": "success",
+        "color": "green"
+      },
+      {
+        "id": 2,
+        "title": "Знакомство с офисом (Елена Петрова)",
+        "type": "meeting",
+        "status": "success",
+        "color": "green"
+      },
+      {
+        "id": 3,
+        "title": "Приветственный кофе (Иван Иванов)",
+        "type": "meeting",
+        "status": "success",
+        "color": "green"
+      },
+      {
+        "id": 4,
+        "title": "Доступы к площадкам (Елена Петрова)",
+        "type": "upload",
+        "status": "success",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "day": "23 Декабря 2021",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Доступы к площадкам (Бил Гейтс)",
+        "type": "upload",
+        "status": "success",
+        "color": "green"
+      },
+      {
+        "id": 2,
+        "title": "Знакомство с офисом (Бил Гейтс)",
+        "type": "meeting",
+        "status": "hold"
+      }
+    ]
+  }
+]

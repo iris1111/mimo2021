@@ -1,145 +1,143 @@
 [
-    {
-        "day": 1,
-        "tasks":  [
-            {
-                "id": 1,
-                "title": "Подписание трудвоого договора",
-                "type": "upload",
-                "status": "success",
-                "color": "green"
-            },
-            {
-                "id": 2,
-                "title": "Upload document",
-                "type": "upload",
-                "status": "hold"
-            },
-            {
-                "id": 100,
-                "title": "Правила героев ПСБ",
-                "type": "hero",
-                "color": "hero",
-                "status": "hero"
-            }
-        ]
-    },
-    {
-        "day": 2,
-        "tasks":  [
-            {
-                "id": 3,
-                "title": "Read text",
-                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti autem, blanditiis commodi incidunt sapiente nesciunt earum delectus magni veritatis amet porro necessitatibus tempora velit excepturi ipsam, exercitationem ducimus quis!",
-                "type": "read",
-                "status": "success",
-                "color": "gold"
-            },
-            {
-                "id": 4,
-                "title": "Подписание трудого договора",
-                "type": "upload",
-                "status": "success",
-                "color": "green"
-            },
-            {
-                "id": 5,
-                "title": "Meeting",
-                "type": "meeting",
-                "status": "hold"
-            },
-            {
-                "id": 6,
-                "title": "Upload document",
-                "type": "upload",
-                "status": "hold"
-            },
-            {
-                "id": 100,
-                "title": "Правила героев ПСБ",
-                "type": "hero",
-                "color": "hero",
-                "status": "hero"
-            }
-        ]
-    },
-    {
-        "day": 3,
-        "tasks":  [
-            {
-                "id": 7,
-                "title": "Read text",
-                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti autem, blanditiis commodi incidunt sapiente nesciunt earum delectus magni veritatis amet porro necessitatibus tempora velit excepturi ipsam, exercitationem ducimus quis!",
-                "type": "read",
-                "status": "success",
-                "color": "gold"
-            },
-            {
-                "id": 100,
-                "title": "Правила героев ПСБ",
-                "type": "hero",
-                "color": "hero",
-                "status": "hero"
-            }
-        ]
-    },
-    {
-        "day": 4,
-        "tasks":  [
-            {
-                "id": 8,
-                "title": "Upload document",
-                "type": "upload",
-                "status": "hold"
-            },
-            {
-                "id": 100,
-                "title": "Правила героев ПСБ",
-                "type": "hero",
-                "color": "hero",
-                "status": "hero"
-            }
-        ]
-    },
-    {
-        "day": 5,
-        "tasks":  [
-            {
-                "id": 9,
-                "title": "Read text",
-                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti autem, blanditiis commodi incidunt sapiente nesciunt earum delectus magni veritatis amet porro necessitatibus tempora velit excepturi ipsam, exercitationem ducimus quis!",
-                "type": "read",
-                "status": "success",
-                "color": "gold"
-            },
-            {
-                "id": 10,
-                "title": "Подписание трудого договора",
-                "type": "upload",
-                "status": "success",
-                "color": "green"
-            },
-            {
-                "id": 11,
-                "title": "Meeting",
-                "type": "meeting",
-                "status": "hold"
-            },
-            {
-                "id": 12,
-                "title": "Upload document",
-                "type": "upload",
-                "status": "hold"
-            },
-            {
-                "id": 100,
-                "title": "Правила героев ПСБ",
-                "type": "hero",
-                "color": "hero",
-                "status": "hero"
-            }
-        ]
-    }
-
-    
-  ]
+  {
+    "day": "День 1",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Подписание трудвоого договора",
+        "type": "upload",
+        "status": "success",
+        "color": "green"
+      },
+      {
+        "id": 2,
+        "title": "Upload document",
+        "type": "upload",
+        "status": "hold"
+      },
+      {
+        "id": 100,
+        "title": "Правила героев ПСБ",
+        "type": "hero",
+        "color": "hero",
+        "status": "hero"
+      }
+    ]
+  },
+  {
+    "day": "День 2",
+    "tasks": [
+      {
+        "id": 3,
+        "title": "Read text",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti autem, blanditiis commodi incidunt sapiente nesciunt earum delectus magni veritatis amet porro necessitatibus tempora velit excepturi ipsam, exercitationem ducimus quis!",
+        "type": "read",
+        "status": "success",
+        "color": "gold"
+      },
+      {
+        "id": 4,
+        "title": "Подписание трудого договора",
+        "type": "upload",
+        "status": "success",
+        "color": "green"
+      },
+      {
+        "id": 5,
+        "title": "Meeting",
+        "type": "meeting",
+        "status": "hold"
+      },
+      {
+        "id": 6,
+        "title": "Upload document",
+        "type": "upload",
+        "status": "hold"
+      },
+      {
+        "id": 100,
+        "title": "Правила героев ПСБ",
+        "type": "hero",
+        "color": "hero",
+        "status": "hero"
+      }
+    ]
+  },
+  {
+    "day": "День 3",
+    "tasks": [
+      {
+        "id": 7,
+        "title": "Read text",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti autem, blanditiis commodi incidunt sapiente nesciunt earum delectus magni veritatis amet porro necessitatibus tempora velit excepturi ipsam, exercitationem ducimus quis!",
+        "type": "read",
+        "status": "success",
+        "color": "gold"
+      },
+      {
+        "id": 100,
+        "title": "Правила героев ПСБ",
+        "type": "hero",
+        "color": "hero",
+        "status": "hero"
+      }
+    ]
+  },
+  {
+    "day": "День 4",
+    "tasks": [
+      {
+        "id": 8,
+        "title": "Upload document",
+        "type": "upload",
+        "status": "hold"
+      },
+      {
+        "id": 100,
+        "title": "Правила героев ПСБ",
+        "type": "hero",
+        "color": "hero",
+        "status": "hero"
+      }
+    ]
+  },
+  {
+    "day": "День 5",
+    "tasks": [
+      {
+        "id": 9,
+        "title": "Read text",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti autem, blanditiis commodi incidunt sapiente nesciunt earum delectus magni veritatis amet porro necessitatibus tempora velit excepturi ipsam, exercitationem ducimus quis!",
+        "type": "read",
+        "status": "success",
+        "color": "gold"
+      },
+      {
+        "id": 10,
+        "title": "Подписание трудого договора",
+        "type": "upload",
+        "status": "success",
+        "color": "green"
+      },
+      {
+        "id": 11,
+        "title": "Meeting",
+        "type": "meeting",
+        "status": "hold"
+      },
+      {
+        "id": 12,
+        "title": "Upload document",
+        "type": "upload",
+        "status": "hold"
+      },
+      {
+        "id": 100,
+        "title": "Правила героев ПСБ",
+        "type": "hero",
+        "color": "hero",
+        "status": "hero"
+      }
+    ]
+  }
+]

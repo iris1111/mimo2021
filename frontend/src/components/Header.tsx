@@ -4,10 +4,9 @@ import Swiper from "swiper";
 import EventItem from "./EventItem";
 import Progress from "./Progress";
 import bonus from "./TaskLine/tasks.json";
-import dataEvents from "./events.json";
 
 export default function Header(props: any) {
-  const [events, setEvents] = useState(dataEvents);
+  const [events, setEvents] = useState(props.events);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: any) => {
@@ -31,7 +30,8 @@ export default function Header(props: any) {
         </Badge>
         <li>Команда</li>
       </ul>
-      <div className="bonusTotal">2 220 б.</div>
+      {props.bonus && <div className="bonusTotal">2 220 б.</div>}
+
       <div className="search"></div>
 
       <Menu
@@ -41,7 +41,7 @@ export default function Header(props: any) {
         open={open}
         onClose={handleClose}
       >
-        {events.map((event) => {
+        {events.map((event: any) => {
           return <EventItem event={event}></EventItem>;
         })}
       </Menu>

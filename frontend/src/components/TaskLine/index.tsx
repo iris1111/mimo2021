@@ -47,9 +47,9 @@ export default function TaskLine(props?: any) {
   return (
     <div className="">
       <div className="task-line">
-        <div className="task-day">День {props.day}</div>
+        <div className="task-day">{props.day}</div>
         <Timeline position="alternate">
-        {props.tasks.map((task: any) => {
+          {props.tasks.map((task: any) => {
             return (
               <TimelineItem>
                 <TimelineOppositeContent
@@ -60,7 +60,11 @@ export default function TaskLine(props?: any) {
                 ></TimelineOppositeContent>
                 <TimelineSeparator className="task-line_line">
                   <TimelineConnector />
-                  {task.type == 'hero' ? <span className="timeHero"></span> : renderIcon(task)}
+                  {task.type == "hero" ? (
+                    <span className="timeHero"></span>
+                  ) : (
+                    renderIcon(task)
+                  )}
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
@@ -77,7 +81,7 @@ export default function TaskLine(props?: any) {
                   </div>
                 </TimelineContent>
               </TimelineItem>
-            )
+            );
           })}
         </Timeline>
       </div>
