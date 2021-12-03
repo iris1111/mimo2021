@@ -8,6 +8,12 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { TimelineOppositeContent } from "@mui/lab";
 import Task from "../Task";
 import "./style.css";
+import {
+  AttachFileOutlined,
+  DescriptionOutlined,
+  GroupOutlined,
+  MeetingRoomOutlined,
+} from "@material-ui/icons";
 
 export default function TaskLine(props?: any) {
   const enum StatusColor {
@@ -21,13 +27,14 @@ export default function TaskLine(props?: any) {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti autem, blanditiis commodi incidunt sapiente nesciunt earum delectus magni veritatis amet porro necessitatibus tempora velit excepturi ipsam, exercitationem ducimus quis!",
       type: "read",
       status: StatusColor.success,
+      color: "gold",
     },
     {
       id: 2,
       title: "Подписание трудого договора",
       type: "upload",
-      status: StatusColor.hold,
-      color: "gold",
+      status: StatusColor.success,
+      color: "green",
     },
     {
       id: 3,
@@ -42,6 +49,29 @@ export default function TaskLine(props?: any) {
       status: StatusColor.success,
     },
   ];
+
+  function renderIcon(task: any) {
+    switch (task.type) {
+      case "upload":
+        return (
+          <AttachFileOutlined
+            className={task.color ? "text-" + task.color : ""}
+          ></AttachFileOutlined>
+        );
+        break;
+
+      case "read":
+        return (
+          <DescriptionOutlined className={"text-gold"}></DescriptionOutlined>
+        );
+        break;
+      case "meeting":
+        return <GroupOutlined></GroupOutlined>;
+        break;
+      default:
+        break;
+    }
+  }
   return (
     <div className="">
       <div className="task-line">
@@ -56,9 +86,9 @@ export default function TaskLine(props?: any) {
                   variant="body2"
                   color="text.secondary"
                 ></TimelineOppositeContent>
-                <TimelineSeparator>
+                <TimelineSeparator className="task-line_line">
                   <TimelineConnector />
-                  <TimelineDot color={task.status} />
+                  {renderIcon(task)}
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>

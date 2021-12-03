@@ -13,7 +13,7 @@
 .task {
   background: #f5f6f7;
   border-radius: 4px;
-  width: 225px;
+  width: 245px;
   position: absolute;
   padding: 5px;
   z-index: 9999;
@@ -21,7 +21,9 @@
 }
 .task-line-task-wrapper {
   position: relative;
-  margin: 20px 0;
+  /* margin: 20px 0; */
+}
+.task-line_line {
 }
 .task-left {
   right: 5px;
@@ -41,4 +43,14 @@
 }
 .gold {
   background-color: rgba(250, 224, 134, 1);
+}
+.text-gold {
+  color: rgba(250, 224, 134, 1);
+}
+.green {
+  background-color: rgba(154, 215, 106, 1);
+}
+
+.text-green {
+  color: rgba(154, 215, 106, 1);
 }
