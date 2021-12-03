@@ -7,7 +7,7 @@ export default function TaskModal(props?: any) {
   return (
     <Modal open={props.open} onClose={props.onClose}>
       <Box className="modal-container">
-        <h1>Title</h1>
+        <h1>{props.task.title}</h1>
         <div className="modal-description">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio

@@ -9,13 +9,14 @@ export default function Task(props: any) {
   function handleOpen() {}
   return (
     <div className={"task" + " " + props.className}>
-      <p>Sample task</p>
+      <p>{props.task.title}</p>
       <Button variant="outlined" onClick={() => setModalOpen(true)}>
         Open
       </Button>
       <TaskModal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
+        task={props.task}
       ></TaskModal>
     </div>
   );

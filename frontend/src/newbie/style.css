@@ -1,0 +1,19 @@
+.section-swiper {
+  height: 100vh;
+  /* bottom: 80px;
+  margin-top: 80px; */
+}
+.task-swiper {
+  height: 100vh;
+}
+.swiper-button-prev {
+  left: 25px;
+}
+.swiper-button-next {
+  right: 25px;
+}
+.header {
+  background: #ffffff;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+  height: 80px;
+}

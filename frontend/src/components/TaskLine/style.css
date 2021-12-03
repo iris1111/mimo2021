@@ -1,6 +1,36 @@
 .task-line-container {
   display: flex;
+  flex-grow: 1;
+  width: 400px;
+  background-color: white;
 }
 .task-line_task {
   margin: 20px;
+}
+.task-lines {
+  display: flex;
+}
+.task {
+  background: #f5f6f7;
+  border-radius: 4px;
+  width: 225px;
+  position: absolute;
+  padding: 5px;
+  z-index: 9999;
+}
+.task-line-task-wrapper {
+  position: relative;
+  margin: 20px 0;
+}
+.task-left {
+  right: 5px;
+}
+.task-line {
+  background: #ffffff;
+  height: 550px;
+  width: 650px;
+  margin: 0 auto;
+}
+.task-day {
+  text-align: center;
 }
