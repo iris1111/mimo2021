@@ -4,31 +4,35 @@
     "tasks": [
       {
         "id": 1,
-        "title": "Доступы к площадкам (Иван Иванов)",
-        "type": "upload",
+        "title": "Регулярная встреча с наставником (Сергей Сергеев)",
+        "type": "meeting",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       },
       {
         "id": 2,
-        "title": "Знакомство с офисом (Елена Петрова)",
+        "title": "Отправка контактов встречающего (Елена Петрова)",
         "type": "meeting",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       },
       {
         "id": 3,
         "title": "Приветственный кофе (Иван Иванов)",
         "type": "meeting",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       },
       {
         "id": 4,
         "title": "Доступы к площадкам (Елена Петрова)",
         "type": "upload",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       }
     ]
   },
@@ -37,16 +41,27 @@
     "tasks": [
       {
         "id": 1,
-        "title": "Доступы к площадкам (Бил Гейтс)",
+        "title": "Отправка плана на адаптацию (Бил Гейтс)",
         "type": "upload",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
+      },
+      {
+        "id": 1,
+        "title": "Доступы к площадкам (Павел Дуров)",
+        "type": "upload",
+        "status": "success",
+        "color": "green",
+        "modal": "adminDone"
       },
       {
         "id": 2,
-        "title": "Знакомство с офисом (Бил Гейтс)",
+        "title": "Знакомство с офисом (Антон Путин)",
         "type": "meeting",
-        "status": "hold"
+        "status": "success",
+        "color": "green",
+        "modal": "adminDone"
       }
     ]
   }

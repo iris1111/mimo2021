@@ -3,7 +3,9 @@ import { Box } from "@mui/system";
 import React from "react";
 import "./TaskModal.css";
 import img from "./modal1.png";
-import imgHero from "../img/modalHero2.png";
+import imgHero from "../img/def.png";
+import imgHero1 from "../img/modalHero0.jpg";
+import imgHero2 from "../img/modalHero1.jpg";
 import modalHero from "../img/modal-hero-large.svg";
 
 export default function TaskModal(props?: any) {
@@ -12,13 +14,55 @@ export default function TaskModal(props?: any) {
     event.target.classList.toggle("modal-hero_active");
   }
   function getModal(task: any) {
-    switch (task.type) {
-      case "upload":
+    switch (task.modal) {
+      case "adminOffice":
         return (
           <div className="modal-upload">
             <div className="modal-upload_top">
               <div className="modal-upload_title">{task.title}</div>
 
+              <div className="modal-upload_descr">
+                Основная задача
+                <br />
+                Вам необходимо назначить сотруднику встречу онлайн или офлайн.
+              </div>
+            </div>
+            <div className="modal-upload_bottom">
+              <div className="modal-upload_dop">
+                <div className="dop_text">Доп. квест-задача</div>
+              </div>
+              <div className="modal-upload_bottom_descr">
+                Внимание! У сотрудника будет дополнительное задание - получить
+                от вас кодовое слово.
+                <br /> Вы должны ему рассказать, что ваш любимый вид спорта -
+                ФУТБОЛ
+              </div>
+              <div className="bottom-button-end">Выполнено</div>
+            </div>
+          </div>
+        );
+        break;
+
+      case "adminDone":
+        return (
+          <div className="modal-upload">
+            <div className="modal-upload_top">
+              <div className="modal-upload_title">{task.title}</div>
+            </div>
+            <div className="modal-upload_bottom">
+              <div className="modal-upload_dop"></div>
+              <p>Задача выполнена</p>
+            </div>
+          </div>
+        );
+        break;
+
+      case "upload":
+        return (
+          <div className="modal-upload">
+            <div className="modal-upload_top">
+              <div className="modal-upload_title">{task.title}</div>
+              <div className="modal-hero_close close_def"></div>
               <div className="modal-upload_descr">Основная задача</div>
               <div className="modal-upload_input">
                 <div className="doc-icon"></div>
@@ -93,10 +137,18 @@ export default function TaskModal(props?: any) {
                 </div>
                 <div className="bottom-button-hero">Сохранить</div>
               </div>
-              <div className="bottom-button-end-hero">Выполнено</div>
+              <div className="bottom-button-end-hero">Готово</div>
             </div>
           </div>
         );
+        break;
+
+      case "hero1":
+        return <img src={imgHero1} />;
+        break;
+
+      case "hero2":
+        return <img src={imgHero2} />;
         break;
 
       default:
@@ -110,23 +162,3 @@ export default function TaskModal(props?: any) {
     </Modal>
   );
 }
-
-/*
-<h1>{props.task.title}</h1>
-        <div className="modal-description">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-            debitis qui repudiandae blanditiis incidunt facilis ratione corrupti
-            deleniti soluta dolores dolorum, at exercitationem facere non
-            voluptates magnam aliquam officiis. Sed.
-          </p>
-        </div>
-        <div className="modal-links">
-          <Link className="modal-links_link" href="#">
-            Document 1
-          </Link>
-          <Link className="modal-links_link" href="#">
-            Document 2
-          </Link>
-        </div>
-*/

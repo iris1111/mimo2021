@@ -38,9 +38,8 @@ export default function Header(props: any) {
   };
   return (
     <div className="header">
-      <a href="/" className="logo"></a>
-      <Progress />
-
+      <div className="search"></div>
+      {props.bonus && <div className="bonusTotal">{bonus} Б</div>}
       <ul className="menu">
         <li onClick={() => toScreen(0)}>Задачи</li>
         {props.bonus ? (
@@ -52,9 +51,8 @@ export default function Header(props: any) {
           <li onClick={(event) => handleClick(event)}>События</li>
         </Badge>
       </ul>
-      {props.bonus && <div className="bonusTotal">{bonus} Б</div>}
-
-      <div className="search"></div>
+      {props.bonus && <Progress />}
+      <a href="/" className="logo"></a>
 
       <Menu
         id="basic-menu"

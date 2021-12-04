@@ -7,28 +7,32 @@
         "title": "Доступы к площадкам (Иван Иванов)",
         "type": "upload",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       },
       {
         "id": 2,
         "title": "Знакомство с офисом (Елена Петрова)",
         "type": "meeting",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       },
       {
         "id": 3,
-        "title": "Приветственный кофе (Иван Иванов)",
-        "type": "meeting",
+        "title": "Доступы к площадкам (Анна Сергеева)",
+        "type": "upload",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       },
       {
         "id": 4,
         "title": "Доступы к площадкам (Елена Петрова)",
         "type": "upload",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       }
     ]
   },
@@ -40,13 +44,15 @@
         "title": "Доступы к площадкам (Бил Гейтс)",
         "type": "upload",
         "status": "success",
-        "color": "green"
+        "color": "green",
+        "modal": "adminDone"
       },
       {
         "id": 2,
-        "title": "Знакомство с офисом (Бил Гейтс)",
+        "title": "Приветственный кофе (Ярослав Баранов)",
         "type": "meeting",
-        "status": "hold"
+        "status": "hold",
+        "modal": "adminOffice"
       }
     ]
   }
