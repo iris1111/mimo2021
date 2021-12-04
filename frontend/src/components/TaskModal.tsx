@@ -4,6 +4,7 @@ import React from "react";
 import "./TaskModal.css";
 import img from "./modal1.png";
 import imgHero from "../img/modalHero2.png";
+import modalHero from "../img/modal-hero-large.svg";
 
 export default function TaskModal(props?: any) {
   console.log(props.task.type);
@@ -36,6 +37,45 @@ export default function TaskModal(props?: any) {
                   <input type="text" name="" id="" />
                 </div>
                 <div className="bottom-button">Проверить</div>
+              </div>
+              <div className="bottom-button-end">Выполнено</div>
+            </div>
+          </div>
+        );
+        break;
+
+      case "hero":
+        return (
+          <div className="modal-hero modal-upload">
+            <div className="modal-hero_top modal-upload_top">
+              <div className="modal-hero_title modal-upload_title">
+                Что тебя мотивирует
+              </div>
+              <div className="modal-hero_image">
+                <img src={modalHero} alt="" />
+              </div>
+              <div className="modal-hero_descr">Опрос</div>
+              <div className="modal-hero_descr_small">
+                Несколько варинтов ответа
+              </div>
+              <div className="modal-hero_checks">
+                <div className="modal-hero_check modal-hero_active">
+                  Крутые задачи
+                </div>
+                <div className="modal-hero_check">Атмосфера</div>
+                <div className="modal-hero_check modal-hero_active">
+                  Коллектив
+                </div>
+                <div className="modal-hero_check">Материальная мотивация</div>
+                <div className="modal-hero_check">Нематериальная мотивация</div>
+              </div>
+            </div>
+            <div className="modal-hero_bottom">
+              <div className="bottom-form">
+                <div className="bottom-input">
+                  <input type="text" name="" id="" />
+                </div>
+                <div className="bottom-button">Сохранить</div>
               </div>
               <div className="bottom-button-end">Выполнено</div>
             </div>

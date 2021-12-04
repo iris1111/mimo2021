@@ -110,3 +110,40 @@
   border-radius: 6px;
   right: 0;
 }
+
+.modal-hero_top {
+  background-image: url("../img/modal-hero.png");
+  height: 160px;
+}
+
+.modal-hero_descr_small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.modal-hero_checks {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  row-gap: 10px;
+}
+
+.modal-hero_check {
+  padding: 10px 7px;
+  border-radius: 48px;
+  border: 1px solid #ffb357;
+  margin-right: 10px;
+}
+
+.modal-hero_active {
+  background: linear-gradient(85.75deg, #ffb357 -19.71%, #ffe1bd 281.91%);
+}
+
+.modal-hero_title {
+  padding-bottom: 10px;
+}
+.modal-hero_image {
+  position: absolute;
+  right: 70px;
+  top: 12px;
+}
