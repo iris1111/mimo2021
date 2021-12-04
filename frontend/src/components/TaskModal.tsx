@@ -7,6 +7,7 @@ import imgHero from "../img/def.png";
 import imgHero1 from "../img/modalHero0.jpg";
 import imgHero2 from "../img/modalHero1.jpg";
 import modalHero from "../img/modal-hero-large.svg";
+import { isPropertyDeclaration } from "typescript";
 
 export default function TaskModal(props?: any) {
   console.log(props.task.type);
@@ -62,7 +63,10 @@ export default function TaskModal(props?: any) {
           <div className="modal-upload">
             <div className="modal-upload_top">
               <div className="modal-upload_title">{task.title}</div>
-              <div className="modal-hero_close close_def"></div>
+              <div
+                onClick={() => closeModal()}
+                className="modal-hero_close close_def"
+              ></div>
               <div className="modal-upload_descr">Основная задача</div>
               <div className="modal-upload_input">
                 <div className="doc-icon"></div>
@@ -101,7 +105,10 @@ export default function TaskModal(props?: any) {
               <div className="modal-hero_image">
                 <img src={modalHero} alt="" />
               </div>
-              <div className="modal-hero_close"></div>
+              <div
+                onClick={() => closeModal()}
+                className="modal-hero_close"
+              ></div>
               <div className="modal-hero_descr">Опрос</div>
               <div className="modal-hero_descr_small">
                 Несколько варинтов ответа
@@ -156,6 +163,10 @@ export default function TaskModal(props?: any) {
         break;
     }
   }
+
+  const closeModal = () => {
+    props.onClose();
+  };
   return (
     <Modal open={props.open} onClose={props.onClose}>
       <Box className="modal-container">{getModal(props.task)}</Box>
