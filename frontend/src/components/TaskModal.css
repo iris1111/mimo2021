@@ -21,3 +21,92 @@
 .modal-links_link {
   padding: 5px;
 }
+
+.modal-upload {
+  background-color: rgba(243, 248, 254, 1);
+  width: 100%;
+  height: 100%;
+}
+.modal-upload_title {
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+.modal-upload_descr {
+  padding-bottom: 10px;
+}
+.doc-icon {
+  background-image: url(../img/modal-doc.png);
+  background-size: contain;
+  height: 50px;
+  width: 170px;
+  border-radius: 5px;
+}
+.modal-upload_top {
+  padding: 40px;
+  height: 130px;
+  color: rgba(255, 255, 255, 1);
+  background-image: url("../img/modal-background.png");
+}
+.modal-upload_bottom {
+  background-color: rgba(243, 248, 254, 1);
+  padding: 20px 40px;
+}
+.modal-upload_dop {
+  display: flex;
+}
+.dop_text {
+  color: rgba(62, 57, 98, 1);
+  font-weight: normal;
+}
+.dop_ball {
+  margin-left: 20px;
+  color: rgba(79, 170, 60, 1);
+}
+.modal-upload_bottom_descr {
+  margin-top: 15px;
+  color: rgba(64, 62, 97, 0.6);
+  font-size: 14px;
+}
+.bottom-form {
+  margin-top: 20px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px 90px;
+}
+.bottom-input {
+  width: 350px;
+  height: 35px;
+}
+.bottom-input > input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #d5d9dc;
+  border-radius: 20px;
+  left: 30px;
+}
+.bottom-button {
+  margin-left: 15px;
+  height: 33px;
+  line-height: 33px;
+  border: 1px solid rgba(119, 169, 254, 1);
+  border-radius: 6px;
+  color: rgba(119, 169, 254, 1);
+  padding: 1px 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bottom-button-end {
+  width: 135px;
+  height: 40px;
+  background-color: rgba(119, 169, 254, 1);
+  color: rgba(255, 255, 255, 1);
+  line-height: 40px;
+  text-align: center;
+  margin-top: 25px;
+  border-radius: 6px;
+  right: 0;
+}

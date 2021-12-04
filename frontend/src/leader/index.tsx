@@ -5,7 +5,7 @@ import "swiper/swiper.min.css";
 import "./style.css";
 import Header from "../components/Header";
 
-import TaskLine from "../components/TaskLine/";
+import TaskLine from "../components/TaskLine";
 import tasks from "./tasks.json";
 import events from "./events.json";
 

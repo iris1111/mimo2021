@@ -25,20 +25,16 @@ export default function TaskLine(props?: any) {
   function renderIcon(task: any) {
     switch (task.type) {
       case "upload":
-        return (
-          <AttachFileOutlined
-            className={task.color ? "text-" + task.color : ""}
-          ></AttachFileOutlined>
-        );
+        return <span className="i-icon"></span>;
         break;
-
       case "read":
-        return (
-          <DescriptionOutlined className={"text-gold"}></DescriptionOutlined>
-        );
+        return <span className="study-icon"></span>;
         break;
       case "meeting":
         return <GroupOutlined></GroupOutlined>;
+        break;
+      case "hero":
+        return <span className="timeHero"></span>;
         break;
       default:
         break;
@@ -60,11 +56,7 @@ export default function TaskLine(props?: any) {
                 ></TimelineOppositeContent>
                 <TimelineSeparator className="task-line_line">
                   <TimelineConnector />
-                  {task.type == "hero" ? (
-                    <span className="timeHero"></span>
-                  ) : (
-                    renderIcon(task)
-                  )}
+                  {renderIcon(task)}
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>

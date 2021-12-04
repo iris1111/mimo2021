@@ -7,18 +7,53 @@ import imgHero from "../img/modalHero2.png";
 
 export default function TaskModal(props?: any) {
   console.log(props.task.type);
+  function getModal(task: any) {
+    switch (task.type) {
+      case "upload":
+        return (
+          <div className="modal-upload">
+            <div className="modal-upload_top">
+              <div className="modal-upload_title">{task.title}</div>
+
+              <div className="modal-upload_descr">Основная задача</div>
+              <div className="modal-upload_input">
+                <div className="doc-icon"></div>
+              </div>
+            </div>
+            <div className="modal-upload_bottom">
+              <div className="modal-upload_dop">
+                <div className="dop_text">Доп. квест-задача</div>
+                <div className="dop_ball">100 баллов</div>
+              </div>
+              <div className="modal-upload_bottom_descr">
+                Отправляйтесь в кабинет с принтером. Там познакомься с
+                человеком, заведующим принетром. Спроси у него про кодовое слово
+                и введи его ниже, чтобы получить дополнительные баллы и обменять
+                их на крутой мерч, который не получить обычным способом!
+              </div>
+              <div className="bottom-form">
+                <div className="bottom-input">
+                  <input type="text" name="" id="" />
+                </div>
+                <div className="bottom-button">Проверить</div>
+              </div>
+              <div className="bottom-button-end">Выполнено</div>
+            </div>
+          </div>
+        );
+        break;
+
+      default:
+        return <img src={imgHero} />;
+        break;
+    }
+  }
   return (
     <Modal open={props.open} onClose={props.onClose}>
-      <Box className="modal-container">
-        {
-          props.task.type == 'hero' ? <img src={imgHero} /> : <img src={img} />
-        }
-        
-      </Box>
+      <Box className="modal-container">{getModal(props.task)}</Box>
     </Modal>
   );
 }
-
 
 /*
 <h1>{props.task.title}</h1>
