@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
@@ -17,6 +17,11 @@ import SwiperCore, { Mousewheel, Navigation, Pagination } from "swiper";
 SwiperCore.use([Navigation, Mousewheel, Pagination]);
 
 export default function Newbie() {
+  const [swiper, setSwiper] = useState<any>(null);
+
+  if (swiper) {
+    swiper.slideTo(tasks.length - 1);
+  }
   return (
     <div>
       <Header events={events} bonus={true} />
@@ -39,6 +44,7 @@ export default function Newbie() {
               slidesPerView={"auto"}
               centeredSlides={true}
               spaceBetween={30}
+              onSwiper={setSwiper}
             >
               {tasks.map((day) => {
                 return (
