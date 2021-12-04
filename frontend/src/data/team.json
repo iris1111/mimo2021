@@ -1,72 +1,50 @@
 [
-    {
-        "id": 1,
-        "name": "Ляля Василькова",
-        "telega": "upload",
-        "mark": "backend",
-        "game": "дважды сидел в тюрьме"
-    }, 
-    {
-        "id": 2,
-        "name": "Валя Лопухова",
-        "telega": "fgfgjt",
-        "mark": "QA",
-        "game": "играет на арфе"
-    },
-    {
-        "id": 3,
-        "name": "Ляля Василькова",
-        "telega": "upload",
-        "mark": "backend",
-        "game": "дважды сидел в тюрьме"
-    }, 
-    {
-        "id": 4,
-        "name": "Валя Лопухова",
-        "telega": "fgfgjt",
-        "mark": "QA",
-        "game": "играет на арфе"
-    },
-    {
-        "id": 5,
-        "name": "Ляля Василькова",
-        "telega": "upload",
-        "mark": "backend",
-        "game": "дважды сидел в тюрьме"
-    }, 
-    {
-        "id": 6,
-        "name": "Валя Лопухова",
-        "telega": "fgfgjt",
-        "mark": "QA",
-        "game": "играет на арфе"
-    },
-    {
-        "id": 7,
-        "name": "Ляля Василькова",
-        "telega": "upload",
-        "mark": "backend",
-        "game": "дважды сидел в тюрьме"
-    }, 
-    {
-        "id": 8,
-        "name": "Валя Лопухова",
-        "telega": "fgfgjt",
-        "mark": "QA",
-        "game": "играет на арфе"
-    },
-    {
-        "id": 9,
-        "name": "Ляля Василькова",
-        "telega": "upload",
-        "mark": "backend",
-        "game": "дважды сидел в тюрьме"
-    }, 
-    {
-        "id": 10,
-        "name": "Валя Лопухова",
-        "telega": "fgfgjt",
-        "mark": "QA",
-        "game": "играет на арфе"
-    }
+  {
+    "id": 1,
+    "name": "Ляля Василькова",
+    "telega": "upload",
+    "mark": "backend",
+    "photo": 1,
+    "game": "вышивает крестиком"
+  },
+  {
+    "id": 2,
+    "name": "Валя Лопухов",
+    "telega": "fgfgjt",
+    "mark": "QA",
+    "photo": 2,
+    "game": "снимается в сериале"
+  },
+  {
+    "id": 3,
+    "name": "Юля Петрова",
+    "telega": "upload",
+    "mark": "backend",
+    "photo": 3,
+    "game": "кмс по дзюдо"
+  },
+  {
+    "id": 4,
+    "name": "Анна Абрамова",
+    "telega": "fgfgjt",
+    "mark": "QA",
+    "photo": 3,
+    "game": "играет на арфе"
+  },
+  {
+    "id": 5,
+    "name": "Светлана Селезнева",
+    "telega": "upload",
+    "mark": "backend",
+    "photo": 1,
+    "game": "образование повара"
+  },
+  {
+    "id": 6,
+    "name": "Константин Лопухов",
+    "telega": "fgfgjt",
+    "mark": "QA",
+    "photo": 2,
+    "game": "работает с братом"
+  }
 ]
