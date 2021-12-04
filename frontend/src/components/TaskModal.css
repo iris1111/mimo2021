@@ -26,6 +26,7 @@
   background-color: rgba(243, 248, 254, 1);
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 .modal-upload_title {
   font-size: 26px;
@@ -108,7 +109,6 @@
   text-align: center;
   margin-top: 25px;
   border-radius: 6px;
-  right: 0;
 }
 
 .modal-hero_top {
@@ -119,6 +119,7 @@
 .modal-hero_descr_small {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
+  margin: 5px 0;
 }
 
 .modal-hero_checks {
@@ -133,6 +134,10 @@
   border-radius: 48px;
   border: 1px solid #ffb357;
   margin-right: 10px;
+  cursor: pointer;
+}
+.modal-hero_check:hover {
+  background: linear-gradient(85.75deg, #ffb357 -19.71%, #ffe1bd 281.91%);
 }
 
 .modal-hero_active {
@@ -146,4 +151,52 @@
   position: absolute;
   right: 70px;
   top: 12px;
+}
+
+.bottom-form-hero {
+  display: flex;
+  /* background-color: rgba(255, 255, 255, 1); */
+  margin: 20px 40px;
+}
+
+.bottom-form-hero > .bottom-input > input {
+  padding-left: 5px;
+  color: rgba(185, 191, 197, 1);
+}
+.bottom-button-hero {
+  margin-left: 25px;
+  height: 33px;
+  line-height: 33px;
+  /* border: 1px solid rgba(119, 169, 254, 1); */
+  border-radius: 6px;
+  color: rgba(119, 169, 254, 1);
+  padding: 2px 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.bottom-button-end-hero {
+  width: 135px;
+  height: 40px;
+  background-color: rgba(119, 169, 254, 1);
+  color: rgba(255, 255, 255, 1);
+  line-height: 40px;
+  text-align: center;
+  margin-top: 25px;
+  border-radius: 6px;
+  float: right;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+.modal-hero_close {
+  background-image: url("../img/modal-hero-close.png");
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
 }

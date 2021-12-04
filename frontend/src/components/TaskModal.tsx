@@ -8,6 +8,9 @@ import modalHero from "../img/modal-hero-large.svg";
 
 export default function TaskModal(props?: any) {
   console.log(props.task.type);
+  function toggleActive(event: any) {
+    event.target.classList.toggle("modal-hero_active");
+  }
   function getModal(task: any) {
     switch (task.type) {
       case "upload":
@@ -54,30 +57,43 @@ export default function TaskModal(props?: any) {
               <div className="modal-hero_image">
                 <img src={modalHero} alt="" />
               </div>
+              <div className="modal-hero_close"></div>
               <div className="modal-hero_descr">Опрос</div>
               <div className="modal-hero_descr_small">
                 Несколько варинтов ответа
               </div>
               <div className="modal-hero_checks">
-                <div className="modal-hero_check modal-hero_active">
+                <div
+                  onClick={toggleActive}
+                  className="modal-hero_check modal-hero_active"
+                >
                   Крутые задачи
                 </div>
-                <div className="modal-hero_check">Атмосфера</div>
-                <div className="modal-hero_check modal-hero_active">
+                <div onClick={toggleActive} className="modal-hero_check">
+                  Атмосфера
+                </div>
+                <div
+                  onClick={toggleActive}
+                  className="modal-hero_check modal-hero_active"
+                >
                   Коллектив
                 </div>
-                <div className="modal-hero_check">Материальная мотивация</div>
-                <div className="modal-hero_check">Нематериальная мотивация</div>
+                <div onClick={toggleActive} className="modal-hero_check">
+                  Материальная мотивация
+                </div>
+                <div onClick={toggleActive} className="modal-hero_check">
+                  Нематериальная мотивация
+                </div>
               </div>
             </div>
             <div className="modal-hero_bottom">
-              <div className="bottom-form">
+              <div className="bottom-form-hero">
                 <div className="bottom-input">
-                  <input type="text" name="" id="" />
+                  <input type="text" name="" id="" placeholder="Свой вариант" />
                 </div>
-                <div className="bottom-button">Сохранить</div>
+                <div className="bottom-button-hero">Сохранить</div>
               </div>
-              <div className="bottom-button-end">Выполнено</div>
+              <div className="bottom-button-end-hero">Выполнено</div>
             </div>
           </div>
         );
