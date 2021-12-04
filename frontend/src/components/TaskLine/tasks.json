@@ -4,7 +4,7 @@
     "tasks": [
       {
         "id": 1,
-        "title": "Подписание трудвоого договора",
+        "title": "Подписание трудового договора",
         "type": "upload",
         "status": "success",
         "color": "green"

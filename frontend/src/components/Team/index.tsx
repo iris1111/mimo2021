@@ -29,7 +29,7 @@ export default function TeamPage() {
   return (
     <div>
       <div className="teamPage">
-        <h1>Команда</h1>
+        <h1>Команда проекта Эквайринг</h1>
         {/*<p>
           Можно познакомиться с ребятами поближе.
           <a href="#" onClick={() => startGame()}>

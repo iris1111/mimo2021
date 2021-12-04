@@ -12,7 +12,7 @@ import events from "./events.json";
 // import Swiper core and required modules
 import SwiperCore, { Mousewheel, Navigation, Pagination } from "swiper";
 import setRef from "@mui/utils/setRef";
-import TeamPage from "../components/Team";
+import NewsPage from "../components/News";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Mousewheel, Pagination]);
@@ -59,7 +59,7 @@ export default function () {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <TeamPage />
+          <NewsPage />
         </SwiperSlide>
       </Swiper>
     </div>

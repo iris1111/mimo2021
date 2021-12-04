@@ -1,0 +1,28 @@
+.newsList {
+  margin: 5px auto 40px;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.new {
+  width: 100%;
+  text-align: left;
+  margin: 5px 0 15px;
+}
+.newName {
+  color: #30353b;
+  font-size: 13px;
+}
+.newMark {
+  font-size: 12px;
+  color: rgba(48, 53, 59, 0.5);
+}
+.teamPage {
+  overflow: hidden;
+}
+.newButton:hover {
+  background: #5b9c4b;
+}
+.newButton {
+  cursor: pointer;
+  background: #91c983;
+}
