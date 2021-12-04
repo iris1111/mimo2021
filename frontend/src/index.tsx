@@ -15,8 +15,8 @@ ReactDOM.render(
         <Route path="/newbie" element={<Newbie />} />
         <Route path="/mentor" element={<Mentor />} />
         <Route path="/leader" element={<Leader />} />
+        <Route path="/" element={<App />} />
       </Routes>
-      <App />
     </React.StrictMode>
   </BrowserRouter>,
   document.getElementById("root")

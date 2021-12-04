@@ -59,7 +59,7 @@
 }
 
 .hero {
-  background: #141a5e;
+  background: linear-gradient(115.13deg, #141a5e 0%, #222ca4 97.28%);
   color: #ffffff;
 }
 .task p {
@@ -72,10 +72,14 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #ffffff8a;
+  background: #00000026;
   position: absolute;
   top: calc(50% - 5px);
   left: -25px;
+}
+
+.task.hero p:before {
+  background: #ffffff26;
 }
 
 .hero:after {
